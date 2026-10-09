@@ -1,0 +1,28 @@
+{
+  "schedule": [
+    {
+      "task_id": "lockout",
+      "technician": "kim",
+      "start_h": 0,
+      "end_h": 1
+    },
+    {
+      "task_id": "bearing",
+      "technician": "lee",
+      "start_h": 1,
+      "end_h": 4
+    },
+    {
+      "task_id": "inspect",
+      "technician": "lee",
+      "start_h": 6,
+      "end_h": 7
+    }
+  ],
+  "unscheduled": [],
+  "complete": true,
+  "assumptions": [
+    "single_shared_bay",
+    "non_preemptive"
+  ]
+}

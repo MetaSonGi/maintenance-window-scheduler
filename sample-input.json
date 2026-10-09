@@ -1,0 +1,50 @@
+{
+  "horizon_h": 12,
+  "blocked": [
+    [
+      4,
+      6
+    ]
+  ],
+  "technicians": [
+    {
+      "id": "kim",
+      "skills": [
+        "electrical"
+      ]
+    },
+    {
+      "id": "lee",
+      "skills": [
+        "mechanical",
+        "inspection"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "lockout",
+      "skill": "electrical",
+      "duration_h": 1,
+      "priority": 1
+    },
+    {
+      "id": "bearing",
+      "skill": "mechanical",
+      "duration_h": 3,
+      "depends_on": [
+        "lockout"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "inspect",
+      "skill": "inspection",
+      "duration_h": 1,
+      "depends_on": [
+        "bearing"
+      ],
+      "priority": 3
+    }
+  ]
+}
